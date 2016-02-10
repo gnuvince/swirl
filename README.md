@@ -1,8 +1,6 @@
 # swirl
 
-__Authors:__ Louis-Philippe Gauthier.
-
-Lightweight Distributed Stream Processor
+High Performance Erlang Stream Processor
 
 [![Build Status](https://travis-ci.org/lpgauth/swirl.svg?branch=master)](https://travis-ci.org/lpgauth/swirl)
 
