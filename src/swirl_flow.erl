@@ -74,7 +74,7 @@ flow(Module, Options, MapperNodes, ReducerNode) ->
             case verify_options(Options) of
                 ok ->
                     {ok, new_flow_rec(Module, ModuleVsn, Options,
-                        MapperNodes, ReducerNode};
+                        MapperNodes, ReducerNode)};
                 {error, Reason} ->
                     {error, Reason}
             end;
@@ -105,7 +105,7 @@ new_flow_rec(Module, ModuleVsn, Options, MapperNodes,
         stream_filter  = ?L(stream_filter, Options),
         stream_names   = ?L(stream_names, Options, []),
         started_at     = os:timestamp()
-    };
+    }.
 
 verify_options(FlowOpts) ->
     verify_options(FlowOpts, []).
