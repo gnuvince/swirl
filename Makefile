@@ -37,7 +37,7 @@ profile:
 	@$(REBAR3) as test compile
 	@erl -noshell \
 	     -pa _build/test/lib/*/ebin \
-		 -eval 'anchor_profile:fprofx()' \
+		 -eval 'swirl_profile:fprofx()' \
 		 -eval 'init:stop()'
 	@_build/test/lib/fprofx/erlgrindx -p fprofx.analysis
 	@$(CACHEGRIND) fprofx.cgrind
